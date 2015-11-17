@@ -17,6 +17,9 @@ public class KlientManager {
 	klienci.add(nowyKlient);
 }
 	
-	
+	public List<Klient> pobierzKlientow() {
+	return klienci;
+}
+
 	
 }
