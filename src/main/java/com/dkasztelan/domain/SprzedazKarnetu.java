@@ -8,17 +8,21 @@ public class SprzedazKarnetu {
 	private int id_karnet;
 	
 	
-	
-	
 	public SprzedazKarnetu(int id_klient, int id_karnet){
 	
 	}
 
-
 	public SprzedazKarnetu() {
 			}
 
+	public int getId_sprzedazKarnetu() {
+		return id_sprzedazKarnetu;
+	}
 	
+	public void setId_sprzedazKarnetu(int id_sprzedazKarnetu) {
+		this.id_sprzedazKarnetu = id_sprzedazKarnetu;
+	}
+
 	public  int getId_klient(){
 		return id_klient;
 	}
@@ -36,20 +40,4 @@ public class SprzedazKarnetu {
 		this.id_karnet = id_karnet;
 	}
 	
-
-	public int getId_sprzedazKarnetu() {
-		return id_sprzedazKarnetu;
 	}
-	
-	public void setId_sprzedazKarnetu(int id_sprzedazKarnetu) {
-		this.id_sprzedazKarnetu = id_sprzedazKarnetu;
-	}
-
-
-
-	}
-	
-	
-
-
-
