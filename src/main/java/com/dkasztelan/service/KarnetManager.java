@@ -16,3 +16,9 @@ public class KarnetManager {
 	nowyKarnet.setId_karnet(id_karnet);
 	karnety.add(nowyKarnet);
 }
+
+public List<Karnet> pobierzKarnety() {
+	return karnety;
+}
+
+}
