@@ -18,8 +18,32 @@ public class SprzedazKarnetu {
 	public SprzedazKarnetu() {
 			}
 
+	
+	public  int getId_klient(){
+		return id_klient;
+	}
+	
+	public void setId_klient(int id_klient){
+		this.id_klient = id_klient;
+		
+	}
+	
+	public  int getId_karnet(){
+		return id_karnet;
+	}
+	
+	public void setId_karnet(int id_karnet){
+		this.id_karnet = id_karnet;
+	}
+	
 
-
+	public int getId_sprzedazKarnetu() {
+		return id_sprzedazKarnetu;
+	}
+	
+	public void setId_sprzedazKarnetu(int id_sprzedazKarnetu) {
+		this.id_sprzedazKarnetu = id_sprzedazKarnetu;
+	}
 
 
 
