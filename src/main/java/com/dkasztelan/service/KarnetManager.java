@@ -10,4 +10,9 @@ public class KarnetManager {
 	private List<Karnet> karnety = new ArrayList<Karnet>();
 	private int id_karnet = 0;
 
+	public void dodajKarnet(Karnet karnet){
+		Karnet nowyKarnet = new Karnet(karnet.getRodzaj(), karnet.getOpis(), karnet.getCena());
+	id_karnet++;
+	nowyKarnet.setId_karnet(id_karnet);
+	karnety.add(nowyKarnet);
 }
