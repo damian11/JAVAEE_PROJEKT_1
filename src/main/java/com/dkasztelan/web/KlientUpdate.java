@@ -21,7 +21,7 @@ public class KlientUpdate extends HttpServlet {
 		int ID = Integer.parseInt(request.getParameter("id_klient"));
         String Imie = request.getParameter("imie");          
         String Nazwisko = request.getParameter("nazwisko");        
-        int Telefon = request.getParameter("telefon");
+        int Telefon = Integer.parseInt(request.getParameter("telefon"));
         
             KlientManager klient = (KlientManager)getServletContext().getAttribute("manager");
            

@@ -1,4 +1,4 @@
-package main.java.com.example.silownia_jdbc.domain;
+package main.java.com.dkasztelan.domain;
 
 
 public class Karnet {

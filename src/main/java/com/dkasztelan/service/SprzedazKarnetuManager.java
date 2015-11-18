@@ -5,6 +5,7 @@ import java.util.List;
 
 import main.java.com.dkasztelan.domain.Klient;
 import main.java.com.dkasztelan.domain.Karnet;
+import main.java.com.dkasztelan.domain.SprzedazKarnetu;
 
 public class SprzedazKarnetuManager {
 	
