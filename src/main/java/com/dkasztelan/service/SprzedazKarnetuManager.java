@@ -31,4 +31,28 @@ public class SprzedazKarnetuManager {
 	karnety.add(nowyKarnet);
 	}
 	
+	public void dodajSprzedazKarnetu(SprzedazKarnetu sprzedazKarnetu) {
+	SprzedazKarnetu nowaSprzedazKarnetu = new SprzedazKarnetu(sprzedazKarnetu.getId_klient(), sprzedazKarnetu.getId_karnet() );
+	id_sprzedazKarnetu++;
+	nowaSprzedazKarnetu.setId_sprzedazKarnetu(id_sprzedazKarnetu);
+	sprzedazeKarnetu.add(nowaSprzedazKarnetu);
+	}
+	
+	
+	public List<Karnet> pobierzKarnety() {
+	return karnety;
+	
+	
+}
+
+		
+	public List<Klient> pobierzKlientow() {
+	return klienci;
+}
+
+
+	public List<SprzedazKarnetu> pobierzSprzedazKarnetow() {
+	return sprzedazeKarnetu;
+}
+
 }
