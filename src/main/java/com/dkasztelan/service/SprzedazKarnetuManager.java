@@ -9,7 +9,7 @@ import main.java.com.dkasztelan.domain.SprzedazKarnetu;
 
 public class SprzedazKarnetuManager {
 	
-	private List<SprzedazKarnetu> sprzedazKarnetu = new ArrayList<SprzedazKarnetu>();
+	private List<SprzedazKarnetu> sprzedazeKarnetu = new ArrayList<SprzedazKarnetu>();
 	private List<Klient> klienci = new ArrayList<Klient>();
 	private List<Karnet> karnety = new ArrayList<Karnet>();
 
@@ -42,15 +42,10 @@ public class SprzedazKarnetuManager {
 	
 	public List<Karnet> pobierzKarnety() {
 	return karnety;
-	
-	
-}
-
-		
+}	
 	public List<Klient> pobierzKlientow() {
 	return klienci;
 }
-
 
 	public List<SprzedazKarnetu> pobierzSprzedazKarnetow() {
 	return sprzedazeKarnetu;
