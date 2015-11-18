@@ -8,7 +8,7 @@ public class Klient {
 	private int telefon;
 	public Klient() {}
 	
-	public Kleint (String imie, String nazwisko, int telefon)
+	public Klient (String imie, String nazwisko, int telefon)
 	{
 		super();
 		this.imie = imie;
@@ -46,6 +46,7 @@ public class Klient {
 	 public void setTelefon(int telefon){
 	 this.telefon = telefon;
 	 }
+ }
 
 	
 	

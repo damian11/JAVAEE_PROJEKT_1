@@ -26,3 +26,8 @@ public class KlientDelete extends HttpServlet{
 	            break;
 	          }
 	 }
+	        if (index != -1)
+	            klient.pobierzKlientow().remove(index);
+	        this.getServletContext().getRequestDispatcher("/pokazKlientow.jsp").forward(request, response);
+	}
+}
