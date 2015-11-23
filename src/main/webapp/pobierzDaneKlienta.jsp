@@ -7,7 +7,24 @@
 <title>Dodaj Klienta</title>
 </head>
 
-
+ <style rel="stylesheet" type="text/css">
+ body {  background: url('silownia1.jpg');}
+ .contentbox {
+    margin-top: 150px;
+     margin-left: 600px;
+    width: auto;
+    height: 100%;
+    background-color: white;
+    border-color: black;
+    overflow: auto;
+    font-family: Arial;   
+    font-size: 40px; 
+           }
+    .tak {color:red;  font-weight: bold; }
+	.sumbit { text-align: center;}
+       .tak3 {color:white;  font-weight: bold; text-align: center;}
+       .stronka { font-weight: bold;  margin-left: 100px; color: black}
+        </style>
 
 <body>
 

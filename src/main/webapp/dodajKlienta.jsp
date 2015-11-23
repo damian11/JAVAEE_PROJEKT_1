@@ -7,21 +7,8 @@
 <title>Dodaj Klienta</title>
 </head>
  <style rel="stylesheet" type="text/css">
-	body {    background-color: ; }
-	table {
-	border-collapse: collapse;
-	width: 300px; 
-	    margin-top: 150px;
-     margin-left: 600px;}
-	td {
-	border: 2px solid #000000;
-	padding: 5px;}
-	.link { color: black ; font-weight: bold; text-align: center;}
-	.header {
-    font-weight: bold;
-    background-color: #C0C0C0; }
-    p {  font-weight: bold; color: black;   margin-top: 80px;  margin-left: 500px; font-size: 24px;}
- 
+	body {     background: url('silownia1.jpg');}
+
  </style>
 <body>
 	<jsp:useBean id="klient" class="main.java.com.dkasztelan.domain.Klient" scope="session" />
@@ -35,7 +22,7 @@
 	<p>Następująca osoba została dodana do bazy:</p>
 	
 
-<table>
+
 	<tr class = "header">
 		<td> Imię: </td>
 		<td> Nazwisko: </td>

@@ -50,7 +50,7 @@ public final class pobierzDaneKlienta_jsp extends org.apache.jasper.runtime.Http
       out.write("</head>\n");
       out.write("\n");
       out.write(" <style rel=\"stylesheet\" type=\"text/css\">\n");
-      out.write(" body {    background-color: #159BD4; }\n");
+      out.write(" body {  background: url('silownia1.jpg');}\n");
       out.write(" .contentbox {\n");
       out.write("    margin-top: 150px;\n");
       out.write("     margin-left: 600px;\n");
@@ -65,7 +65,7 @@ public final class pobierzDaneKlienta_jsp extends org.apache.jasper.runtime.Http
       out.write("    .tak {color:red;  font-weight: bold; }\n");
       out.write("\t.sumbit { text-align: center;}\n");
       out.write("       .tak3 {color:white;  font-weight: bold; text-align: center;}\n");
-      out.write("       .stronka { font-weight: bold;  margin-left: 1000px; color: black}\n");
+      out.write("       .stronka { font-weight: bold;  margin-left: 100px; color: black}\n");
       out.write("        </style>\n");
       out.write("\n");
       out.write("<body>\n");
