@@ -6,31 +6,48 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="style.css" rel="stylesheet" type="text/css">
-<title>Klient</title>
+//<link href="style.css" rel="stylesheet" type="text/css">
+<title>Klienci</title>
 
 </head>
 
  <style rel="stylesheet" type="text/css">
- body {    background-color: white; }
- a { color: black ; font-weight: bold; text-align: center;}
- p{margin-left: 15cm; }
- </style>
- 
+	body{
+		background: url('silownia1.jpg'); background-position: center top; no-repeat;
+	}
+	a{ 
+		color: white; 
+		font-weight: bold; 
+		text-align: center;
+	}
+ 	td{
+ 		text-align : center;
+ 		color: white;
+ 	}
+ 	th{
+ 		color: white;
+ 	}
+    p{
+    	margin-left: 10cm;
+    	color: white;
+    }
+    table{
+    	margin-left: 140px;
+    }            
+</style>
  
 <body>
-	<jsp:useBean id="klientmanager" class="main.java.com.dkasztelan.service.KlientManager"
-		scope="application" />
+	<jsp:useBean id="klientmanager" class="main.java.com.dkasztelan.service.KlientManager" scope="application" />
 
 <div class="row">
 
 <table style="width:80% " border="1";>
     <tr>
-    	<th>Id_klient</th>
+
     	<th>Imie</th>
         <th>Nazwisko</th>
         <th>Telefon</th>
-        <th>Cena</th>
+
 
     </tr>
  
@@ -38,16 +55,17 @@
 
 	    <tr>
 	     <td> ${klient.id_klient} </td>
-            <td> ${klient.imie} </td>
-            <td> ${klient.nazwisko} </td>
-             <td> ${klient.telefon} </td>
-             <td> ${klient.id_karnet} </td>
-             <td><form action="deleteKarnet">
-      <input type='hidden' name='delete' value= ${karnet.id_karnet} />  
+         <td> ${klient.imie} </td>
+         <td> ${klient.nazwisko} </td>
+         <td> ${klient.telefon} </td>
+      
+      <td>
+      <form action="deleteKlient">
+      <input type='hidden' name='delete' value= ${klient.id_klient} />  
       <input type='submit' value="USUN" />
     </form>
-          <form action="edytujKarnet.jsp">
-      <input type='hidden' name='update'  value= ${karnet.id_karnet} />
+          <form action="edytujKlient.jsp">
+      <input type='hidden' name='update'  value= ${klient.id_klient} />
       <input type='submit' value="EDYTUJ" />
     </form></td>
         </tr>
@@ -55,8 +73,8 @@
             
             </div>
    
-  <a class="btn btn-default" href="pobierzDaneKarnetu.jsp"><b><font color="black">Dodaj karnet</a></h2> &nbsp; &nbsp; &nbsp; &nbsp; <br><br><br>
-    <a class="btn btn-default" href="index.jsp"><b><font color="red">Powrót do strony glównej</a></h2> <br><br>
+  <a class="btn btn-default" href="pobierzDaneKlienta.jsp"><b><font color="white">Dodaj klienta</a></h2> &nbsp; &nbsp; &nbsp; &nbsp; <br><br><br>
+    <a class="btn btn-default" href="index.jsp"><b><font color="white">Powrót do strony glównej</a></h2> <br><br>
    
 </body>
 </html>
