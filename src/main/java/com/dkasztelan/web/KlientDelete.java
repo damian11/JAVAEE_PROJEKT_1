@@ -16,7 +16,7 @@ public class KlientDelete extends HttpServlet{
 	response.setContentType("text/html");
 	int index = -1;
 	int ID = Integer.parseInt(request.getParameter("delete"));
-	KlientManager klient = (KlientManager) getServletContext().getAttribute("manager");
+	KlientManager klient = (KlientManager) getServletContext().getAttribute("klientmanager");
 
 	for (int i=0; i<klient.pobierzKlientow().size(); i++)
 	{
@@ -28,6 +28,6 @@ public class KlientDelete extends HttpServlet{
 	 }
 	        if (index != -1)
 	            klient.pobierzKlientow().remove(index);
-	        this.getServletContext().getRequestDispatcher("/pokazKlientow.jsp").forward(request, response);
+	        this.getServletContext().getRequestDispatcher("/pokazWszystkoKlient.jsp").forward(request, response);
 	}
 }

@@ -51,7 +51,7 @@
 
     </tr>
  
-	 <p:forEach var="klient" items="${klientmanager.pobierzKlientow()}" varStatus="no">
+	 <p:forEach var="klient" items="${klientmanager.pobierzKlientow()}" >
 
 	    <tr>
 	     <td> ${klient.id_klient} </td>

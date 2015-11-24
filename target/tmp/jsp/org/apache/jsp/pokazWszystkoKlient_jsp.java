@@ -12,7 +12,7 @@ public final class pokazWszystkoKlient_jsp extends org.apache.jasper.runtime.Htt
 
   private static java.util.List<String> _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_p_forEach_varStatus_var_items;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_p_forEach_var_items;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -21,11 +21,11 @@ public final class pokazWszystkoKlient_jsp extends org.apache.jasper.runtime.Htt
   }
 
   public void _jspInit() {
-    _jspx_tagPool_p_forEach_varStatus_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_p_forEach_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
-    _jspx_tagPool_p_forEach_varStatus_var_items.release();
+    _jspx_tagPool_p_forEach_var_items.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -144,12 +144,11 @@ public final class pokazWszystkoKlient_jsp extends org.apache.jasper.runtime.Htt
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  p:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_p_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_p_forEach_varStatus_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_p_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_p_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_p_forEach_0.setPageContext(_jspx_page_context);
     _jspx_th_p_forEach_0.setParent(null);
     _jspx_th_p_forEach_0.setVar("klient");
     _jspx_th_p_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${klientmanager.pobierzKlientow()}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
-    _jspx_th_p_forEach_0.setVarStatus("no");
     int[] _jspx_push_body_count_p_forEach_0 = new int[] { 0 };
     try {
       int _jspx_eval_p_forEach_0 = _jspx_th_p_forEach_0.doStartTag();
@@ -202,7 +201,7 @@ public final class pokazWszystkoKlient_jsp extends org.apache.jasper.runtime.Htt
       _jspx_th_p_forEach_0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_p_forEach_0.doFinally();
-      _jspx_tagPool_p_forEach_varStatus_var_items.reuse(_jspx_th_p_forEach_0);
+      _jspx_tagPool_p_forEach_var_items.reuse(_jspx_th_p_forEach_0);
     }
     return false;
   }
