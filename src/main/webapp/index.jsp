@@ -25,5 +25,6 @@
 <h1> Siłownia </h1>
 
   <h2><a class = strona1 href="pobierzDaneKlienta.jsp">Dodaj Klienta</a></h2>
+  
 </body>
 </html>
