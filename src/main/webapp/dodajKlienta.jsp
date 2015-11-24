@@ -28,10 +28,10 @@
 <body>
 	<jsp:useBean id="klient" class="main.java.com.dkasztelan.domain.Klient" scope="session" />
 	<jsp:setProperty name="klient" property="*" />
-	<jsp:useBean id="manager" class="main.java.com.dkasztelan.service.KlientManager"
+	<jsp:useBean id="klientmanager" class="main.java.com.dkasztelan.service.KlientManager"
 		scope="application" />
 			<%
-		manager.dodajKlienta(klient);
+		klientmanager.dodajKlienta(klient);
 	%>
 	<div class="dodaj">
 	<p>Następująca osoba została dodana do bazy:</p>

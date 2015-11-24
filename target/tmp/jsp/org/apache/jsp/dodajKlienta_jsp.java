@@ -82,18 +82,18 @@ public final class dodajKlienta_jsp extends org.apache.jasper.runtime.HttpJspBas
       org.apache.jasper.runtime.JspRuntimeLibrary.introspect(_jspx_page_context.findAttribute("klient"), request);
       out.write("\r\n");
       out.write("\t");
-      main.java.com.dkasztelan.service.KlientManager manager = null;
+      main.java.com.dkasztelan.service.KlientManager klientmanager = null;
       synchronized (application) {
-        manager = (main.java.com.dkasztelan.service.KlientManager) _jspx_page_context.getAttribute("manager", PageContext.APPLICATION_SCOPE);
-        if (manager == null){
-          manager = new main.java.com.dkasztelan.service.KlientManager();
-          _jspx_page_context.setAttribute("manager", manager, PageContext.APPLICATION_SCOPE);
+        klientmanager = (main.java.com.dkasztelan.service.KlientManager) _jspx_page_context.getAttribute("klientmanager", PageContext.APPLICATION_SCOPE);
+        if (klientmanager == null){
+          klientmanager = new main.java.com.dkasztelan.service.KlientManager();
+          _jspx_page_context.setAttribute("klientmanager", klientmanager, PageContext.APPLICATION_SCOPE);
         }
       }
       out.write("\r\n");
       out.write("\t\t\t");
 
-		manager.dodajKlienta(klient);
+		klientmanager.dodajKlienta(klient);
 	
       out.write("\r\n");
       out.write("\t<div class=\"dodaj\">\r\n");

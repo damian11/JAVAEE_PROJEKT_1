@@ -23,7 +23,7 @@
     .tak {color:red;  font-weight: bold; }
 	.sumbit { text-align: center;}
        .tak3 {color:white;  font-weight: bold; text-align: center;}
-       .stronka { font-weight: bold;  margin-left: 100px; color: black}
+       .stronka { font-weight: bold;  margin-left: 100px; color: white}
         </style>
 
 <body>
