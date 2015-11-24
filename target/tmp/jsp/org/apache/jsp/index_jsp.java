@@ -53,10 +53,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \t\tbackground-color:white;}\r\n");
       out.write("            h1 \t    {text-align: center; color: white; font-size: 200px; font-style: italic;\r\n");
       out.write("                    text-decoration:  ; font-family: \"Arial\"; line-height: 10px}\r\n");
-      out.write("            h2\t\t  {text-align: center; color: black; background: url('silownia1.jpg'); background-position: center top; no-repeat;\r\n");
+      out.write("            h2\t\t  {text-align: center; color: white;  background-position: center top; no-repeat;\r\n");
       out.write("             font-size: 50px; font-style: italic;\r\n");
-      out.write("                    font-family: \"Times New Roman\"; line-height: 100px}\r\n");
-      out.write("                    \r\n");
+      out.write("                    font-family: \"Times New Roman\"; line-height: 50px}\r\n");
+      out.write("             h3\t\t  {text-align: center; color: white;  background-position: center top; no-repeat;\r\n");
+      out.write("             font-size: 50px; font-style: italic;\r\n");
+      out.write("                    font-family: \"Times New Roman\"; line-height: 50px}       \r\n");
       out.write("\r\n");
       out.write("            \r\n");
       out.write("\r\n");
@@ -68,6 +70,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<h1> Siłownia </h1>\r\n");
       out.write("\r\n");
       out.write("  <h2><a class = strona1 href=\"pobierzDaneKlienta.jsp\">Dodaj Klienta</a></h2>\r\n");
+      out.write(" \r\n");
+      out.write("  <h3> <a class = stronka href=\"pokazWszystkoKlient.jsp\">Lista Klientów</a>\r\n");
+      out.write(" <br><br>\r\n");
+      out.write("\r\n");
+      out.write("  \r\n");
+      out.write("  \r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

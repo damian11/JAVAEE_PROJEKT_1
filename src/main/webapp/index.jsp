@@ -10,10 +10,12 @@
             		background-color:white;}
             h1 	    {text-align: center; color: white; font-size: 200px; font-style: italic;
                     text-decoration:  ; font-family: "Arial"; line-height: 10px}
-            h2		  {text-align: center; color: black; background: url('silownia1.jpg'); background-position: center top; no-repeat;
+            h2		  {text-align: center; color: white;  background-position: center top; no-repeat;
              font-size: 50px; font-style: italic;
-                    font-family: "Times New Roman"; line-height: 100px}
-                    
+                    font-family: "Times New Roman"; line-height: 50px}
+             h3		  {text-align: center; color: white;  background-position: center top; no-repeat;
+             font-size: 50px; font-style: italic;
+                    font-family: "Times New Roman"; line-height: 50px}       
 
             
 
@@ -25,6 +27,11 @@
 <h1> Siłownia </h1>
 
   <h2><a class = strona1 href="pobierzDaneKlienta.jsp">Dodaj Klienta</a></h2>
+ 
+  <h3> <a class = stronka href="pokazWszystkoKlient.jsp">Lista Klientów</a>
+ <br><br>
+
+  
   
 </body>
 </html>
