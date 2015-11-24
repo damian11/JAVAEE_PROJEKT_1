@@ -8,7 +8,22 @@
 </head>
  <style rel="stylesheet" type="text/css">
 	body {     background: url('silownia1.jpg');}
+	table{
+	border-collapse: collapse;
+	width: 500px; 
+	margin-top: auto;
 
+    }
+    
+   td {
+	border: 2px solid #000000;
+	padding: 5px;}
+	.rama {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    }
+    p {  font-weight: bold; color: white;   margin-top: 80px;  margin-left: 500px; font-size: 50px;}
  </style>
 <body>
 	<jsp:useBean id="klient" class="main.java.com.dkasztelan.domain.Klient" scope="session" />
@@ -21,14 +36,16 @@
 	<div class="dodaj">
 	<p>Następująca osoba została dodana do bazy:</p>
 	
+<table>
 
+	<tr class = "rama">
+		<td>Imię</td>  
 
-	<tr class = "header">
-		<td> Imię: </td>
-		<td> Nazwisko: </td>
-		<td> Telefon: </td>
+		<td>Nazwisko</td> 
+
+		<td>Telefon</td>
 	</tr>
-	<tr>
+	<tr class = "rama">
 		<td> <jsp:getProperty name="klient" property="imie"></jsp:getProperty> </td>
 		<td> <jsp:getProperty name="klient" property="nazwisko"></jsp:getProperty> </td>
 		<td> <jsp:getProperty name="klient" property="telefon"></jsp:getProperty> </td>
@@ -40,7 +57,7 @@
 	
 	 <a class = "link" href="index.jsp">Powrót do strony głównej</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	
-
+ <a class="btn btn-default" href="pobierzDaneKlienta.jsp"><b><font color="white">Dodaj klienta</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
  
   
