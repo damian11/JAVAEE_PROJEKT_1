@@ -16,7 +16,7 @@
 	<jsp:useBean id="manager" class="main.java.com.dkasztelan.service.KlientManager"
 		scope="application" />
 			<%
-		manager.add(klient);
+		manager.dodajKlienta(klient);
 	%>
 	<div class="dodaj">
 	<p>Następująca osoba została dodana do bazy:</p>
@@ -38,7 +38,7 @@
 </table>
 
 	
-	 <a class = "link" href="http://localhost:8080/silownia/">Powrót do strony głównej</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	 <a class = "link" href="index.jsp">Powrót do strony głównej</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	
 
 

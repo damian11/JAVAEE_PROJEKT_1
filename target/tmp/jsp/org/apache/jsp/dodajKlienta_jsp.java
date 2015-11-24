@@ -49,21 +49,8 @@ public final class dodajKlienta_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("<title>Dodaj Klienta</title>\r\n");
       out.write("</head>\r\n");
       out.write(" <style rel=\"stylesheet\" type=\"text/css\">\r\n");
-      out.write("\tbody {    background-color: ; }\r\n");
-      out.write("\ttable {\r\n");
-      out.write("\tborder-collapse: collapse;\r\n");
-      out.write("\twidth: 300px; \r\n");
-      out.write("\t    margin-top: 150px;\r\n");
-      out.write("     margin-left: 600px;}\r\n");
-      out.write("\ttd {\r\n");
-      out.write("\tborder: 2px solid #E37509;\r\n");
-      out.write("\tpadding: 5px;}\r\n");
-      out.write("\t.link { color: black ; font-weight: bold; text-align: center;}\r\n");
-      out.write("\t.header {\r\n");
-      out.write("    font-weight: bold;\r\n");
-      out.write("    background-color: #C0C0C0; }\r\n");
-      out.write("    p {  font-weight: bold; color: black;   margin-top: 80px;  margin-left: 500px; font-size: 24px;}\r\n");
-      out.write(" \r\n");
+      out.write("\tbody {     background: url('silownia1.jpg');}\r\n");
+      out.write("\r\n");
       out.write(" </style>\r\n");
       out.write("<body>\r\n");
       out.write("\t");
@@ -91,14 +78,14 @@ public final class dodajKlienta_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\r\n");
       out.write("\t\t\t");
 
-		manager.add(klient);
+		manager.dodajKlienta(klient);
 	
       out.write("\r\n");
       out.write("\t<div class=\"dodaj\">\r\n");
       out.write("\t<p>Następująca osoba została dodana do bazy:</p>\r\n");
       out.write("\t\r\n");
       out.write("\r\n");
-      out.write("<table>\r\n");
+      out.write("\r\n");
       out.write("\t<tr class = \"header\">\r\n");
       out.write("\t\t<td> Imię: </td>\r\n");
       out.write("\t\t<td> Nazwisko: </td>\r\n");
@@ -120,7 +107,7 @@ public final class dodajKlienta_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("</table>\r\n");
       out.write("\r\n");
       out.write("\t\r\n");
-      out.write("\t <a class = \"link\" href=\"http://localhost:8080/silownia/\">Powrót do strony głównej</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\r\n");
+      out.write("\t <a class = \"link\" href=\"index.jsp\">Powrót do strony głównej</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\r\n");
       out.write("\t\r\n");
       out.write("\r\n");
       out.write("\r\n");
