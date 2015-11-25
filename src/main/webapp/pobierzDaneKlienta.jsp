@@ -14,16 +14,16 @@
      margin-left: 600px;
     width: auto;
     height: 100%;
-    background-color: white;
+  
     border-color: black;
     overflow: auto;
     font-family: Arial;   
-    font-size: 40px; 
+    font-size: 60px; 
            }
-    .tak {color:red;  font-weight: bold; }
+    .klasa1 {color:white;  font-weight: bold; }
 	.sumbit { text-align: center;}
-       .tak3 {color:white;  font-weight: bold; text-align: center;}
-       .stronka { font-weight: bold;  margin-left: 100px; color: white}
+       .klasa2 {color:white; font-size: 50px font-weight: bold; text-align: center;}
+       .klasa { font-weight: bold;  margin-left: 100px; color: white}
         </style>
 
 <body>
@@ -37,19 +37,19 @@
             <form action="dodajKlienta.jsp">
             <table class="operationtable">
                 <tr class='tableheader'>
-                    <td class = tak3 colspan='2'>Dodaj Klienta</td>
+                    <td class = klasa2 colspan='2'>Dodaj Klienta</td>
                 </tr>
 				 
                 <tr>
-                    <td class = tak>Imię:</td>
+                    <td class = klasa1>Imię:</td>
                     <td><input type="text" name="imie" value="" /></td>
                 </tr>
                 <tr>
-                    <td class = tak>Nazwisko:</td>
+                    <td class = klasa1>Nazwisko:</td>
                     <td><input type="text" name="nazwisko" value="" /></td>
                 </tr>
                 <tr>
-                    <td class = tak>Telefon:</td>
+                    <td class = klasa1>Telefon:</td>
                     <td ><input type="number" name="telefon" value="" /></td>
                 </tr>
                 <tr>
@@ -59,7 +59,7 @@
             </form>
         </div>
 
-     <a class=stronka href="http://localhost:8080/silownia/">Powrót do strony głównej</a>
+     <a class=klasa2 href="http://localhost:8080/silownia/">Powrót do strony głównej</a>
     
 </body>
 </html>

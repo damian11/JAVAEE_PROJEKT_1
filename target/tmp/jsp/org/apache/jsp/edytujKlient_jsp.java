@@ -48,16 +48,45 @@ public final class edytujKlient_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\r\n");
       out.write("<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
-      out.write("<title>Edycja</title>\r\n");
+      out.write("<title>Edytuj Klienta</title>\r\n");
       out.write("</head>\r\n");
+      out.write("\r\n");
       out.write("<style rel=\"stylesheet\" type=\"text/css\">\r\n");
-      out.write("body {    background-color: #ffcc66; }\r\n");
-      out.write(".klasa1 { margin-top: 4cm; margin-left: 15cm; font-size: 24px;}\r\n");
-      out.write(".klasa2 { margin-left:3cm; margin-top:1cm;}\r\n");
-      out.write("a { color:black; font-size:24px; font-weight:bold; margin-left: 15cm; margin-top: 2cm;}\r\n");
-      out.write("            h1 \t    {text-align: center; color: black; font-size: 70px; font-style: italic;\r\n");
-      out.write("                    text-decoration:  ; font-family: \"Arial\"; margin-top: -12cm;}\r\n");
+      out.write("\tbody{\r\n");
+      out.write("\t\tbackground: url('silownia1.jpg'); background-position: center top; no-repeat;\r\n");
+      out.write("\t\tbackground-position: center top; no-repeat;\r\n");
+      out.write("\t}\r\n");
+      out.write("\t.przedrostki{ \r\n");
+      out.write("   margin-top: 150px;\r\n");
+      out.write("     margin-left: 600px;\r\n");
+      out.write("    width: auto;\r\n");
+      out.write("    height: 100%;\r\n");
+      out.write("  \r\n");
+      out.write("    border-color: white;\r\n");
+      out.write("    overflow: auto;\r\n");
+      out.write("    font-family: Arial;   \r\n");
+      out.write("    font-size: 60px; \r\n");
+      out.write("           }\r\n");
+      out.write("\t\r\n");
+      out.write("\t.zapisz{ \r\n");
+      out.write("\t\tmargin-left:100px; \r\n");
+      out.write("\t\tmargin-top: 20px;\r\n");
+      out.write("\t}\r\n");
+      out.write("\ta{ \r\n");
+      out.write("color:white;  font-weight: bold; \r\n");
+      out.write("\t}\r\n");
+      out.write("    h1{\r\n");
+      out.write("    \tmargin-left: 16cm;\r\n");
+      out.write("    \tcolor: white; \r\n");
+      out.write("    \tfont-size: 50px; \r\n");
+      out.write("    \tfont-style: italic;\r\n");
+      out.write("        font-family: \"Arial\"; \r\n");
+      out.write("        margin-top: -12cm;\r\n");
+      out.write("\t}\r\n");
       out.write("</style>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<body>\r\n");
       out.write("\t");
       main.java.com.dkasztelan.domain.Klient klient = null;
@@ -82,33 +111,31 @@ public final class edytujKlient_jsp extends org.apache.jasper.runtime.HttpJspBas
         }
       }
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("     ");
+      out.write("\t");
 
         String ID = request.getParameter("update");
-    	
-    	String  imie = "", nazwisko = "";
-    	int telefon = 0; 
-        for (Klient kl : klientmanager.pobierzKlientow())
-        {
-          if (kl.getId_klient() == Integer.parseInt(ID))
-          {
-      	
-        imie = kl.getImie();
-        nazwisko = kl.getNazwisko();
-        telefon = kl.getTelefon();
-    
- 
-        break;
-             }
-         }
-         
-      out.println("<div class = 'klasa1'><form action='updateKlient'><input type='hidden' name='id' value='" + ID + "' /><tr><td colspan='2'><b>ID Klienta:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  " + ID + "</td></tr><br><tr><td><b>Imie: </b> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; </td><td><input type='text' name='imie' pattern='[A-Za-z]*' title='Imie powinno zawierac tylko z liter' value='" + imie + "' /></td></tr><br><tr><td><b>Nazwisko:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td><td><input type='text' name='nazwisko' pattern='[A-Za-z]*' title='Nazwisko powinno składac sie tylko z liter' value='" + nazwisko + "' /></td></tr><tr><br><td><b>Numer telefonu:</b></td><td><input type='text' name='numertelefonu'  pattern='[0-9]*' title='Numer telefonu powinien zawierać tylko z liczb' value='" + telefon +  "' /></td></tr><tr><br><td colspan='2'><div class='klasa2'><input type='submit' value='ZAPISZ'></div></td></tr></form></div>"); 
+     	int telefon = 0;
+    	String  imie = "",  nazwisko = "";
+        for (Klient k : klientmanager.pobierzKlientow()){
+          if (k.getId_klient() == Integer.parseInt(ID)){
+      		imie = k.getImie();
+       		nazwisko = k.getNazwisko();
+        	telefon = k.getTelefon();
+        	break;
+        	}
+        }
+        
+   		out.println("<div class = 'przedrostki'><form action='updateKlient'><input type='hidden' name='id' value='" + ID +
+		   "' /><tr><td colspan='2'><b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  " + ID +
+		   "</td></tr><br><tr><td><b>Imie: </b> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; </td><td><input type='text' name='imie' pattern='[A-Za-z]*' title='Imie powinno sk�ada� si� tylko z liter' value='" + imie +
+		   "' /></td></tr><br><tr><td><b>Nazwisko:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td><td><input type='text' name='nazwisko' pattern='[A-Za-z]*' title='Nazwisko powinno sk�ada� sie tylko z liter' value='" + nazwisko +
+		   "' /></td></tr><tr><br><td><b>Telefon:</b></td><td><input type='text' name='telefon'value='" + telefon + 
+		   "' /></td></tr><tr><br><td colspan='2'><div class='zapisz'><input type='submit' value='ZAPISZ'></div></td></tr></form></div>");
+		
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("                \r\n");
-      out.write("<a class=\"btn btn-default\" href=\"index.jsp\"><b><font color=\"black\">Powrot do strony glownej</a> \r\n");
-      out.write("<h1>Edycja</h1>\r\n");
+      out.write("\t<br>\r\n");
+      out.write("\t<a href=\"index.jsp\"><h3><center><font color=\"white\">Powrot do strony glownej</a></h3></center>\r\n");
+      out.write("\t<h1>Edytuj Klienta</h1>\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
